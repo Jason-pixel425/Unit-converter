@@ -22,9 +22,9 @@ function convert(input) {
     const lengthImperial = input * 3.281;
     const volumeImperial = input * 0.264;
 
-    const massMetric = 2.204 / input;
-    const lengthMetric = 3.281 / input;
-    const volumeMetric = 0.264 / input;
+    const massMetric = input / 2.204;
+    const lengthMetric = input / 3.281;
+    const volumeMetric =  input / 0.264;
 
     const lengthConversionString = `${input} meters = ${lengthImperial.toFixed(3)} feet | ${input} feet = ${lengthMetric.toFixed(3)} meters`;
     const volumeConversionString = `${input} liters = ${volumeImperial.toFixed(3)} gallons | ${input} gallons = ${volumeMetric.toFixed(3)} liters`;
